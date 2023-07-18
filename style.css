@@ -70,6 +70,60 @@ font-weight: 600;
     gap: 1.8rem;
     margin-top: 150px;
 }
+.popular-collection-title{
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center; 
+    margin-top: 120px;
+}
+.popular-collection-container{
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 1.5rem;
+margin-left: 50px;
+}
+.popular-collection-photos{
+    width: 312px;
+    height: 480px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.popular-photo {
+    width: 250px;
+    height: 216px;
+    margin-top:20px ;
+    margin-left: 30px;
+}
+.popular-title{
+color: #181915;
+font-size: 28px;
+font-weight: 500;
+margin-left:30px;
+}
+.popular-collection-price{
+ color: rgba(0, 0, 0, 0.87);
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+margin-left: 30px;
+}
+.popular-collection-rating{
+    margin-left: 30px;
+}
+.popular-collection-rating .fa-star, .fa-star-half-stroke{
+    color: rgb(175, 175, 24);
+}
+.popular-collection-desc{
+color: #787885;
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+margin-left: 30px;
+}
+
+
 
 
 
@@ -139,6 +193,9 @@ font-weight: 600;
  .sponsor{
     flex-wrap: wrap;
  }
+ .popular-collection-container{
+    grid-template-columns: repeat(1,1fr);
+ }
 }
 @media screen and (min-width:576px) and (max-width:960px) {
    nav{
@@ -153,5 +210,10 @@ font-weight: 600;
    }
 .sponsor{
     flex-wrap: wrap;
+}
+.popular-collection-container{
+    grid-template-columns: repeat(1,1fr);
+    width: 100;
+    margin-left: 200px;
 }
 }
